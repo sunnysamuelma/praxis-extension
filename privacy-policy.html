@@ -6,245 +6,284 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: Arial, sans-serif; margin: 2em; background: #fafafb; color: #222; }
-    h1, h2, h3 { color: #2d6cdf; }
+    h1 { color: #134b9c; font-size: 2em; margin-bottom: 0.5em; }
+    h2 { color: #2d6cdf; margin-top: 2em; margin-bottom: 1em; }
+    h3 { color: #3182ce; margin-top: 1.5em; margin-bottom: 0.5em; }
     ul, ol { margin-left: 2em; }
+    li { margin-bottom: 0.5em; }
     code, pre { background: #f5f5f5; padding: 2px 4px; border-radius: 3px; }
     .summary { background: #eef3fb; padding: 1em; border-radius: 8px; margin-top: 2em; }
     .emoji { font-size: 1.2em; }
     a { color: #2d6cdf; }
+    .contact { background: #f0fff4; border-left: 5px solid #38a169; padding: 1em; margin-top: 2em; }
+    .section { margin-bottom: 2em; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy for Praxis - Student Productivity Extension</h1>
   <p><strong>Last Updated:</strong> November 1, 2025</p>
-  <h2>Introduction</h2>
-  <p>
-    Praxis ("we", "our", or "the extension") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Praxis Chrome extension.
-  </p>
 
-  <h2>Information We Collect</h2>
+  <div class="section">
+    <h2>Introduction</h2>
+    <p>
+      Praxis ("we", "our", or "the extension") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Praxis Chrome extension.
+    </p>
+  </div>
 
-  <h3>1. Account Information</h3>
-  <ul>
-    <li><strong>Email address:</strong> Used for authentication and account identification</li>
-    <li><strong>Username:</strong> Derived from your email address for display purposes</li>
-    <li><strong>Password:</strong> Securely hashed and stored via Firebase Authentication (we never see your actual password)</li>
-  </ul>
+  <div class="section">
+    <h2>Information We Collect</h2>
 
-  <h3>2. Usage Data</h3>
-  <ul>
-    <li><strong>Lock-in session data:</strong> Duration, start/end times, completion status</li>
-    <li><strong>Productivity statistics:</strong> Total focused time, sessions completed, XP earned, level</li>
-    <li><strong>Website visit data:</strong> Time spent on websites you've added to your blocklist (stored locally)</li>
-    <li><strong>Daily usage patterns:</strong> Aggregated time tracking for your personal analytics</li>
-  </ul>
+    <h3>Account Information</h3>
+    <ul>
+      <li><strong>Email address:</strong> Used for authentication and account identification</li>
+      <li><strong>Username:</strong> Derived from your email address for display purposes</li>
+      <li><strong>Password:</strong> Securely hashed and stored via Firebase Authentication (we never see your actual password)</li>
+    </ul>
 
-  <h3>3. Social Features Data</h3>
-  <ul>
-    <li><strong>Clan membership:</strong> Clan name, role, member list (if you join a clan)</li>
-    <li><strong>Friends list:</strong> Friend connections and invite codes (if you add friends)</li>
-    <li><strong>Session notifications:</strong> Alerts when friends or clan members start sessions</li>
-  </ul>
+    <h3>Usage Data</h3>
+    <ul>
+      <li><strong>Lock-in session data:</strong> Duration, start/end times, completion status</li>
+      <li><strong>Productivity statistics:</strong> Total focused time, sessions completed, XP earned, level</li>
+      <li><strong>Website visit data:</strong> Time spent on websites you've added to your blocklist (stored locally)</li>
+      <li><strong>Daily usage patterns:</strong> Aggregated time tracking for your personal analytics</li>
+    </ul>
 
-  <h3>4. Technical Data</h3>
-  <ul>
-    <li><strong>Browser extension ID:</strong> For proper functionality</li>
-    <li><strong>Local storage:</strong> Preferences, settings, and cached data stored on your device</li>
-  </ul>
+    <h3>Social Features Data</h3>
+    <ul>
+      <li><strong>Clan membership:</strong> Clan name, role, member list (if you join a clan)</li>
+      <li><strong>Friends list:</strong> Friend connections and invite codes (if you add friends)</li>
+      <li><strong>Session notifications:</strong> Alerts when friends or clan members start sessions</li>
+    </ul>
 
-  <h2>How We Use Your Information</h2>
-  <ul>
-    <li><strong>Provide core functionality:</strong>
-      <ul>
-        <li>Track your focused work sessions</li>
-        <li>Block distracting websites during lock-in mode</li>
-        <li>Calculate XP, levels, and achievements</li>
-        <li>Sync your data across devices</li>
-      </ul>
-    </li>
-    <li><strong>Enable social features:</strong>
-      <ul>
-        <li>Connect you with friends</li>
-        <li>Facilitate clan sessions</li>
-        <li>Show leaderboards and rankings</li>
-      </ul>
-    </li>
-    <li><strong>Improve user experience:</strong>
-      <ul>
-        <li>Remember your preferences</li>
-        <li>Provide personalized statistics</li>
-        <li>Optimize performance with caching</li>
-      </ul>
-    </li>
-    <li><strong>Maintain security:</strong>
-      <ul>
-        <li>Authenticate your account</li>
-        <li>Protect your data with Firebase security rules</li>
-      </ul>
-    </li>
-  </ul>
+    <h3>Technical Data</h3>
+    <ul>
+      <li><strong>Browser extension ID:</strong> For proper functionality</li>
+      <li><strong>Local storage:</strong> Preferences, settings, and cached data stored on your device</li>
+    </ul>
+  </div>
 
-  <h2>Data Storage and Security</h2>
-  <h3>Firebase Services</h3>
-  <ul>
-    <li><strong>Authentication:</strong> Secure email/password login</li>
-    <li><strong>Firestore Database:</strong> Cloud storage for your stats, clans, and friends</li>
-    <li><strong>Security:</strong> All data is protected by Firebase security rules ensuring users can only access their own data</li>
-  </ul>
-  <h3>Local Storage</h3>
-  <ul>
-    <li>Browser preferences</li>
-    <li>Cached statistics (for faster loading)</li>
-    <li>Session state</li>
-    <li>Blocklist settings</li>
-  </ul>
-  <h3>Data Encryption</h3>
-  <ul>
-    <li>All data transmitted to/from Firebase is encrypted via HTTPS</li>
-    <li>Passwords are hashed and never stored in plain text</li>
-    <li>Firebase handles all security infrastructure</li>
-  </ul>
+  <div class="section">
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li><strong>Provide core functionality:</strong>
+        <ul>
+          <li>Track your focused work sessions</li>
+          <li>Block distracting websites during lock-in mode</li>
+          <li>Calculate XP, levels, and achievements</li>
+          <li>Sync your data across devices</li>
+        </ul>
+      </li>
+      <li><strong>Enable social features:</strong>
+        <ul>
+          <li>Connect you with friends</li>
+          <li>Facilitate clan sessions</li>
+          <li>Show leaderboards and rankings</li>
+        </ul>
+      </li>
+      <li><strong>Improve user experience:</strong>
+        <ul>
+          <li>Remember your preferences</li>
+          <li>Provide personalized statistics</li>
+          <li>Optimize performance with caching</li>
+        </ul>
+      </li>
+      <li><strong>Maintain security:</strong>
+        <ul>
+          <li>Authenticate your account</li>
+          <li>Protect your data with Firebase security rules</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
-  <h2>Data Sharing and Third Parties</h2>
-  <h3>We DO NOT:</h3>
-  <ul>
-    <li>❌ Sell your personal information</li>
-    <li>❌ Share your data with advertisers</li>
-    <li>❌ Track your browsing outside of your configured blocklist</li>
-    <li>❌ Use your data for marketing purposes</li>
-    <li>❌ Share your email with third parties</li>
-  </ul>
-  <h3>We DO:</h3>
-  <ul>
-    <li>✅ Use Firebase (Google) for secure data storage and authentication</li>
-    <li>✅ Allow you to share your progress with friends (only if you choose to add them)</li>
-    <li>✅ Display your stats on leaderboards (only your username, not email)</li>
-  </ul>
-  <h3>Third-Party Services</h3>
-  <ul>
-    <li>The only third-party service we use is:
-      <ul>
-        <li><strong>Google Firebase:</strong> For authentication and database services</li>
-        <li>Firebase's privacy policy: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
-      </ul>
-    </li>
-  </ul>
+  <div class="section">
+    <h2>Data Storage and Security</h2>
 
-  <h2>Your Data Rights</h2>
-  <ul>
-    <li><strong>Access Your Data</strong>
-      <ul>
-        <li>View all your statistics on the dashboard</li>
-        <li>Export your data (contact us for assistance)</li>
-      </ul>
-    </li>
-    <li><strong>Delete Your Data</strong>
-      <ul>
-        <li>Delete your account and all associated data</li>
-        <li>Remove specific sessions or statistics</li>
-        <li>Clear local storage at any time</li>
-      </ul>
-    </li>
-    <li><strong>Control Your Data</strong>
-      <ul>
-        <li>Choose what websites to track</li>
-        <li>Opt out of social features (clans/friends)</li>
-        <li>Adjust privacy settings</li>
-      </ul>
-    </li>
-    <li><strong>Data Portability</strong>
-      <ul>
-        <li>Request a copy of your data in JSON format</li>
-        <li>Transfer your data to another service (upon request)</li>
-      </ul>
-    </li>
-  </ul>
+    <h3>Firebase Services</h3>
+    <ul>
+      <li><strong>Authentication:</strong> Secure email/password login</li>
+      <li><strong>Firestore Database:</strong> Cloud storage for your stats, clans, and friends</li>
+      <li><strong>Security:</strong> All data is protected by Firebase security rules ensuring users can only access their own data</li>
+    </ul>
 
-  <h2>Data Retention</h2>
-  <ul>
-    <li><strong>Active accounts:</strong> Data is retained as long as your account is active</li>
-    <li><strong>Inactive accounts:</strong> Data may be deleted after 2 years of inactivity</li>
-    <li><strong>Deleted accounts:</strong> All data is permanently deleted within 30 days of account deletion</li>
-    <li><strong>Local data:</strong> Cleared when you uninstall the extension or clear browser data</li>
-  </ul>
+    <h3>Local Storage</h3>
+    <ul>
+      <li>Browser preferences</li>
+      <li>Cached statistics (for faster loading)</li>
+      <li>Session state</li>
+      <li>Blocklist settings</li>
+    </ul>
 
-  <h2>Children's Privacy</h2>
-  <p>
-    Praxis is intended for users aged 13 and older. We do not knowingly collect information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us to have it removed.
-  </p>
+    <h3>Data Encryption</h3>
+    <ul>
+      <li>All data transmitted to/from Firebase is encrypted via HTTPS</li>
+      <li>Passwords are hashed and never stored in plain text</li>
+      <li>Firebase handles all security infrastructure</li>
+    </ul>
+  </div>
 
-  <h2>Cookies and Tracking</h2>
-  <ul>
-    <li><strong>No third-party cookies:</strong> We do not use advertising or tracking cookies</li>
-    <li><strong>Local storage only:</strong> We use browser local storage for functionality</li>
-    <li><strong>No cross-site tracking:</strong> We only track time on websites you've added to your blocklist</li>
-  </ul>
+  <div class="section">
+    <h2>Data Sharing and Third Parties</h2>
+    <h3>We DO NOT:</h3>
+    <ul>
+      <li>❌ Sell your personal information</li>
+      <li>❌ Share your data with advertisers</li>
+      <li>❌ Track your browsing outside of your configured blocklist</li>
+      <li>❌ Use your data for marketing purposes</li>
+      <li>❌ Share your email with third parties</li>
+    </ul>
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time. We will notify you of any changes by:
-  </p>
-  <ul>
-    <li>Updating the "Last Updated" date at the top of this policy</li>
-    <li>Displaying a notification in the extension (for major changes)</li>
-  </ul>
+    <h3>We DO:</h3>
+    <ul>
+      <li>✅ Use Firebase (Google) for secure data storage and authentication</li>
+      <li>✅ Allow you to share your progress with friends (only if you choose to add them)</li>
+      <li>✅ Display your stats on leaderboards (only your username, not email)</li>
+    </ul>
 
-  <h2>Your Consent</h2>
-  <p>
-    By using Praxis, you consent to this Privacy Policy and our collection and use of information as described.
-  </p>
+    <h3>Third-Party Services</h3>
+    <ul>
+      <li>The only third-party service we use is:
+        <ul>
+          <li><strong>Google Firebase:</strong> For authentication and database services</li>
+          <li>Firebase's privacy policy: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
-  <h2>Data Deletion Instructions</h2>
-  <ol>
-    <li>
-      <strong>Option 1 - In-App:</strong>
-      <ul>
-        <li>Open Praxis Dashboard</li>
-        <li>Go to Settings</li>
-        <li>Click "Delete Account"</li>
-        <li>Confirm deletion</li>
-      </ul>
-    </li>
-    <li>
-      <strong>Option 2 - Manual:</strong>
-      <ul>
-        <li>Sign out of Praxis</li>
-        <li>Uninstall the extension</li>
-        <li>Email us to request data deletion: <a href="mailto:your-support-email@example.com">your-support-email@example.com</a></li>
-      </ul>
-    </li>
-    <li>
-      <strong>Option 3 - Firebase:</strong>
-      <ul>
-        <li>Your data will be automatically deleted when you delete your Firebase account</li>
-      </ul>
-    </li>
-  </ol>
+  <div class="section">
+    <h2>Your Data Rights</h2>
+    <ul>
+      <li><strong>Access Your Data</strong>
+        <ul>
+          <li>View all your statistics on the dashboard</li>
+          <li>Export your data (contact us for assistance)</li>
+        </ul>
+      </li>
+      <li><strong>Delete Your Data</strong>
+        <ul>
+          <li>Delete your account and all associated data</li>
+          <li>Remove specific sessions or statistics</li>
+          <li>Clear local storage at any time</li>
+        </ul>
+      </li>
+      <li><strong>Control Your Data</strong>
+        <ul>
+          <li>Choose what websites to track</li>
+          <li>Opt out of social features (clans/friends)</li>
+          <li>Adjust privacy settings</li>
+        </ul>
+      </li>
+      <li><strong>Data Portability</strong>
+        <ul>
+          <li>Request a copy of your data in JSON format</li>
+          <li>Transfer your data to another service (upon request)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
-  <h2>Contact Us</h2>
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:praxisfocus.mp4@gmail.com">praxisfocus.mp4@gmail.com</a></li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/sunnysamuelma/praxis-extension" target="_blank">sunnysamuelma/praxis-extension</a></li>
-  </ul>
+  <div class="section">
+    <h2>Data Retention</h2>
+    <ul>
+      <li><strong>Active accounts:</strong> Data is retained as long as your account is active</li>
+      <li><strong>Inactive accounts:</strong> Data may be deleted after 2 years of inactivity</li>
+      <li><strong>Deleted accounts:</strong> All data is permanently deleted within 30 days of account deletion</li>
+      <li><strong>Local data:</strong> Cleared when you uninstall the extension or clear browser data</li>
+    </ul>
+  </div>
 
-  <h2>Compliance</h2>
-  <ul>
-    <li>Chrome Web Store Developer Program Policies</li>
-    <li>Google's User Data Policy</li>
-    <li>GDPR (General Data Protection Regulation)</li>
-    <li>CCPA (California Consumer Privacy Act)</li>
-  </ul>
+  <div class="section">
+    <h2>Children's Privacy</h2>
+    <p>
+      Praxis is intended for users aged 13 and older. We do not knowingly collect information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us to have it removed.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Cookies and Tracking</h2>
+    <ul>
+      <li><strong>No third-party cookies:</strong> We do not use advertising or tracking cookies</li>
+      <li><strong>Local storage only:</strong> We use browser local storage for functionality</li>
+      <li><strong>No cross-site tracking:</strong> We only track time on websites you've added to your blocklist</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. We will notify you of any changes by:
+    </p>
+    <ul>
+      <li>Updating the "Last Updated" date at the top of this policy</li>
+      <li>Displaying a notification in the extension (for major changes)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Your Consent</h2>
+    <p>
+      By using Praxis, you consent to this Privacy Policy and our collection and use of information as described.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Data Deletion Instructions</h2>
+    <ol>
+      <li>
+        <strong>Option 1 - In-App:</strong>
+        <ul>
+          <li>Open Praxis Dashboard</li>
+          <li>Go to Settings</li>
+          <li>Click "Delete Account"</li>
+          <li>Confirm deletion</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Option 2 - Manual:</strong>
+        <ul>
+          <li>Sign out of Praxis</li>
+          <li>Uninstall the extension</li>
+          <li>Email us to request data deletion: <a href="mailto:praxisfocus.mp4@gmail.com">praxisfocus.mp4@gmail.com</a></li>
+        </ul>
+      </li>
+      <li>
+        <strong>Option 3 - Firebase:</strong>
+        <ul>
+          <li>Your data will be automatically deleted when you delete your Firebase account</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:praxisfocus.mp4@gmail.com">praxisfocus.mp4@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/sunnysamuelma/praxis-extension" target="_blank">sunnysamuelma/praxis-extension</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Compliance</h2>
+    <ul>
+      <li>Chrome Web Store Developer Program Policies</li>
+      <li>Google's User Data Policy</li>
+      <li>GDPR (General Data Protection Regulation)</li>
+      <li>CCPA (California Consumer Privacy Act)</li>
+    </ul>
+  </div>
 
   <div class="summary">
     <h2>Summary</h2>
     <p>
       <strong>In plain English:</strong><br>
-      - We collect your email, productivity stats, and social connections<br>
-      - We use Firebase to securely store your data<br>
-      - We never sell your data or share it with advertisers<br>
-      - You can delete your account and data anytime<br>
-      - We only track websites you choose to block<br>
-      - Your data is yours - we just help you organize it
+      – We collect your email, productivity stats, and social connections<br>
+      – We use Firebase to securely store your data<br>
+      – We never sell your data or share it with advertisers<br>
+      – You can delete your account and data anytime<br>
+      – We only track websites you choose to block<br>
+      – Your data is yours – we just help you organize it
     </p>
     <p class="emoji"><strong>Thank you for using Praxis! Your privacy and productivity are our top priorities. 🎯</strong></p>
   </div>
